@@ -32,7 +32,7 @@ export default function Sidebar() {
 
   return (
     <nav className="sidebar" role="navigation" aria-label="Main navigation">
-      <a href="/" className="sidebar-logo-wrap" aria-label="Invoice App – go to home">
+      <a href="/" className="sidebar-logo-wrap" aria-label="Invoice App - go to home">
         <Logo />
       </a>
 
@@ -47,7 +47,11 @@ export default function Sidebar() {
         </button>
         <div className="sidebar-hr" role="separator" />
         <div className="avatar" aria-label="User avatar" aria-hidden="true">
-          S
+          <img
+            src="/avatar.jpg"
+            alt="User avatar"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '50%' }}
+          />
         </div>
       </div>
     </nav>
